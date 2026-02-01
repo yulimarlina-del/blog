@@ -1,14 +1,18 @@
 # Personal Blog
 
-A modern personal blog built with Remix v2 (with v3 future flags enabled).
+A modern personal blog built with **React Router v7** (Remix v3).
+
+## About React Router v7
+
+React Router v7 is the latest evolution of the Remix framework, combining the best of both React Router and Remix into a unified, powerful framework for building modern web applications. This represents the next generation (Remix v3) with improved developer experience and performance.
 
 ## Features
 
 - 📝 Clean, responsive blog layout
-- 🚀 Built with Remix for optimal performance
+- 🚀 Built with React Router v7 for optimal performance
 - 💅 Custom CSS styling
 - 📱 Mobile-friendly design
-- 🔍 Individual blog post pages
+- 🔍 Individual blog post pages with dynamic routing
 - ℹ️ About page
 
 ## Getting Started
@@ -58,7 +62,8 @@ blog/
 │   │   └── app.css           # Global styles
 │   ├── entry.client.tsx      # Client entry point
 │   ├── entry.server.tsx      # Server entry point
-│   └── root.tsx              # Root layout
+│   ├── root.tsx              # Root layout
+│   └── routes.ts             # Route configuration
 ├── public/                   # Static assets
 ├── vite.config.ts           # Vite configuration
 ├── tsconfig.json            # TypeScript configuration
@@ -67,11 +72,20 @@ blog/
 
 ## Technologies Used
 
-- **Remix** - Full-stack web framework
-- **React** - UI library
+- **React Router v7** - Next-generation full-stack framework (Remix v3)
+- **React 18** - UI library
 - **TypeScript** - Type-safe JavaScript
 - **Vite** - Build tool
 - **CSS** - Styling
+
+## What's New in React Router v7 (Remix v3)
+
+React Router v7 brings together the best of Remix and React Router:
+- Simplified routing with enhanced file-based routing
+- Improved data loading patterns
+- Better type safety and developer experience
+- Unified API surface
+- Enhanced performance optimizations
 
 ## Deployment
 

@@ -1,6 +1,6 @@
-import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
-import { Link, useLoaderData } from "@remix-run/react";
+import type { LoaderFunctionArgs, MetaFunction } from "react-router";
+import { data } from "react-router";
+import { Link, useLoaderData } from "react-router";
 
 // Sample blog posts data
 const posts: Record<string, { title: string; date: string; content: string }> = {
@@ -99,7 +99,7 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
     throw new Response("Post not found", { status: 404 });
   }
 
-  return json({ post: posts[slug], slug });
+  return data({ post: posts[slug], slug });
 };
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {

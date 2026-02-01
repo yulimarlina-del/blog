@@ -6,3 +6,6 @@ node_modules
 .env
 
 .DS_Store
+
+# React Router generated types
+/.react-router
